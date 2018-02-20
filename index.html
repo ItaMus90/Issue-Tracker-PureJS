@@ -13,11 +13,42 @@
     
 </head>
 <body>
-
+    <div class="container">
+        <h1>Issue Tracker <small>by ItaMus90</small></h1>
+        <div class="jumbotron">
+            <h3>Add New Issue</h3>
+            <form id="issueInputForm">
+                <div class="form-group">
+                    <label for="issueDescInput">Description</label>
+                    <input 
+                     type="text" 
+                     class="form-control"
+                     id="issueDescInput"
+                     placeholder="Describe the issue ....">
+                </div>
+                <div class="form-group">
+                    <label for="issueSeverityInput">Severity</label>
+                    <select id="issueSeverityInput" class="form-control">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+               </div>
+                <div class="form-group">
+                    <label for="issueAssignedToInput">Assigned To</label>
+                    <input 
+                     type="text" 
+                     class="form-control"
+                     id="issueAssignedToInput"
+                     placeholder="Enter responsible ....">
+               </div>
+            </form>
+        </div>
+    </div>
 
     <!--JS File-->
     <script src="http://chancejs.com/chance.min.js"></script>
-     <script>
+     <script
         src="http://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous">
